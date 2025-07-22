@@ -5,10 +5,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Teachable Machine Image Upload</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+    body {
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-size: xx-large;
+      text-align: center;
+      margin: 20px;
+      background: linear-gradient(to right, #000000, #0c0b0b, #1d1919, #2e3d47, #273346);
+      color: white;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .custom-file-label {
+      display: inline-block;
+      padding: 30px 60px;
+      background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: "Orbitron", sans-serif;
+      border-radius: 16px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+      margin: 20px auto;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .custom-file-label:hover,
+    .custom-file-label:focus {
+      background: linear-gradient(90deg, #81d4fa 0%, #1565c0 100%);
+      box-shadow: 0 4px 16px rgba(33, 150, 243, 0.18);
+      transform: translateY(-2px) scale(1.03);
+      outline: none;
+    }
+
+    #label-container {
+      margin: 30px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      max-width: 400px;
+      font-size: 1.1rem;
+    }
+
+    #label-container div {
+      background: rgba(33, 150, 243, 0.15);
+      border-radius: 10px;
+      padding: 16px 28px;
+      color: #fff;
+      font-family: "Orbitron", sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 6px rgba(33, 150, 243, 0.10);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    #label-container div:not(:empty):hover {
+      background: rgba(33, 150, 243, 0.28);
+      box-shadow: 0 2px 12px rgba(33, 150, 243, 0.18);
+    }
+  </style>
 </head>
 
 <body>
   <h2>Upload Image for Prediction</h2>
+  <label for="imageInput" class="custom-file-label">Choose your file</label>
   <input type="file" id="imageInput" accept="image/*" />
   <br /><br />
   <img id="uploadedImage" width="200" style="display: none" />

@@ -1,1 +1,1 @@
-{"tfjsVersion":"1.7.4","tmVersion":"2.4.10","packageVersion":"0.8.4-alpha2","packageName":"@teachablemachine/image","timeStamp":"2025-07-22T12:00:57.988Z","userMetadata":{},"modelName":"CAT/DOG","labels":["Cat","Dog"],"imageSize":224}
+{"tfjsVersion":"1.7.4","tmVersion":"2.4.10","packageVersion":"0.8.4-alpha2","packageName":"@teachablemachine/image","timeStamp":"2025-07-22T14:22:05.608Z","userMetadata":{},"modelName":"CAT/DOG","labels":["Cat","Dog","Elephant","Panda","Leopard ","Monkey","Bear"],"imageSize":224}
